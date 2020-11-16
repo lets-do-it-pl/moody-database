@@ -63,5 +63,6 @@
     <Build Include="Table\Category.sql" />
     <Build Include="Table\CategoryDetail.sql" />
     <Build Include="Table\VersionHistory.sql" />
+    <Build Include="Table\User.sql" />
   </ItemGroup>
 </Project>
