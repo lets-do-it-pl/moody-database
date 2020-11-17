@@ -8,8 +8,8 @@
 	[IsActive]		BIT				NOT NULL	DEFAULT		0,
 	[UserType]		VARCHAR(25)		NOT NULL	DEFAULT		'Standard',
 	[CreatedDate]	DATETIME		NOT NULL	DEFAULT		GETDATE(),
-	[CreatedBy]		VARCHAR(500)	NOT NULL,
+	[CreatedBy]		INT				NOT NULL,
 	[ModifiedDate]	DATETIME		NULL,
-	[ModifiedBy]	VARCHAR(500)	NULL,
+	[ModifiedBy]	INT				NULL,
 	[IsDeleted]		BIT				NOT NULL	DEFAULT		0
 )
