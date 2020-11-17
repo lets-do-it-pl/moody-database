@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[CategoryDetail]
 (
-	[Id]			INT             NOT NULL     PRIMARY KEY,
+	[Id]			INT             NOT NULL     PRIMARY KEY IDENTITY(1,1),
 	[CategoryId]	INT             NOT NULL,
     [Order]			INT             NOT NULL,
     [Image]			VARBINARY (MAX) NOT NULL,
