@@ -5,9 +5,9 @@
     [Order]			INT             NOT NULL,
     [Image]			VARBINARY (MAX) NOT NULL,
 	[CreatedDate]	DATETIME		NOT NULL	DEFAULT GETDATE(),
-	[CreatedBy]		INT				NOT NULL,
+	[CreatedBy]		VARCHAR(500)	NOT NULL,
 	[ModifiedDate]	DATETIME		NULL,
-	[ModifiedBy]	INT				NULL,
+	[ModifiedBy]	VARCHAR(500)	NULL,
 	[IsDeleted]		BIT				NOT NULL	DEFAULT 0
     CONSTRAINT [FK_CategoryDetails_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [dbo].[Category] ([Id])
 )
