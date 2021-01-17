@@ -57,6 +57,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Table" />
+    <Folder Include="Stored Procedure" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Table\Client.sql" />
@@ -64,5 +65,6 @@
     <Build Include="Table\CategoryDetail.sql" />
     <Build Include="Table\VersionHistory.sql" />
     <Build Include="Table\User.sql" />
+    <Build Include="Stored Procedure\AutoCompleteSearch.sql" />
   </ItemGroup>
 </Project>
