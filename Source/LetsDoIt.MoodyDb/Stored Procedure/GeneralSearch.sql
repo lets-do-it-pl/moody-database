@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[AutoCompleteSearch]
+﻿CREATE PROCEDURE [dbo].[GeneralSearch]
 	@EnteredValue nvarchar(500)
 AS
 BEGIN
