@@ -66,5 +66,6 @@
     <Build Include="Table\VersionHistory.sql" />
     <Build Include="Table\User.sql" />
     <Build Include="Stored Procedure\SpGeneralSearch.sql" />
+    <Build Include="Stored Procedure\SpGetDashboardItems.sql" />
   </ItemGroup>
 </Project>
