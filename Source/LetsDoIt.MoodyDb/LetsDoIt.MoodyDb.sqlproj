@@ -57,7 +57,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Table" />
-    <Folder Include="Stored Procedures" />
+    <Folder Include="Stored Procedure" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Table\Client.sql" />
@@ -65,15 +65,9 @@
     <Build Include="Table\CategoryDetail.sql" />
     <Build Include="Table\VersionHistory.sql" />
     <Build Include="Table\User.sql" />
-    <Build Include="Stored Procedures\SpGetDashboardItems.sql" />
+    <Build Include="Stored Procedure\SpGeneralSearch.sql" />
+    <Build Include="Stored Procedure\SpGetDashboardItems.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TestProject1\TestProject1.csproj">
-      <Name>TestProject1</Name>
-      <Project>{f96ce3b2-ab2e-4b1f-b34b-183c572706ea}</Project>
-      <Private>True</Private>
-      <IsModelAware>True</IsModelAware>
-      <GenerateSqlClrDdl>True</GenerateSqlClrDdl>
-    </ProjectReference>
+  
   </ItemGroup>
 </Project>
