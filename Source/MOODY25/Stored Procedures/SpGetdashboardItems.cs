@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using EntityFrameworkExtras.EFCore;
 
 namespace MOODY25.Stored_Procedures
 {
-    class SpGetdashboardItems
+    [StoredProcedure("SpGetDashboardItems")]
+    public class SpGetDashboardItems
     {
     }
 }
