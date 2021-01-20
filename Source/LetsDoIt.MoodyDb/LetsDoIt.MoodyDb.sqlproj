@@ -65,6 +65,6 @@
     <Build Include="Table\CategoryDetail.sql" />
     <Build Include="Table\VersionHistory.sql" />
     <Build Include="Table\User.sql" />
-    <Build Include="Stored Procedure\GeneralSearch.sql" />
+    <Build Include="Stored Procedure\SpGeneralSearch.sql" />
   </ItemGroup>
 </Project>
