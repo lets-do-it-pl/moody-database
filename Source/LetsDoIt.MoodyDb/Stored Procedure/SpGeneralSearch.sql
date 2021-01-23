@@ -8,6 +8,6 @@ AS
 
 	UNION ALL
 
-	SELECT 'User' AS [Type], Username AS Name
+	SELECT 'User' AS [Type], FullName AS Name
 	FROM [dbo].[User] AS u
-	WHERE u.IsDeleted = 0 AND u.Username Like  @searchKey + '%' COLLATE SQL_Latin1_General_CP1_CI_AS
+	WHERE u.IsDeleted = 0 AND u.FullName Like  @searchKey + '%' COLLATE SQL_Latin1_General_CP1_CI_AS
