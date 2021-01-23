@@ -1,19 +1,19 @@
 ﻿CREATE PROCEDURE [dbo].[SpGetDashboardItems] AS
-SELECT 'Category' AS Name,
+SELECT 'TotalCategoryCount' AS Name,
        COUNT(1) AS TotalNumber
 FROM Category
 WHERE IsDeleted = 0
 UNION
-SELECT 'Category Detail' AS Name,
+SELECT 'TotalCategoryDetailCount' AS Name,
        COUNT(1) AS TotalNumber
 FROM CategoryDetail
 WHERE IsDeleted = 0
 UNION
-SELECT 'Mobile Client' AS Name,
+SELECT 'TotalRegisteredClientCount' AS Name,
        COUNT(1) AS TotalNumber
 FROM Client
 UNION
-SELECT 'AverageDailyUser' AS Name,
+SELECT 'AverageRegisteredClientCount' AS Name,
        AVG(dcc.DailyCreatedUserCount) AS TotalNumber
 FROM
   (SELECT Count(1) AS DailyCreatedUserCount
