@@ -58,6 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="Table" />
     <Folder Include="Stored Procedure" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Table\Client.sql" />
@@ -67,5 +68,8 @@
     <Build Include="Table\User.sql" />
     <Build Include="Stored Procedure\SpGeneralSearch.sql" />
     <Build Include="Stored Procedure\SpGetDashboardItems.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Release-1.1.sql" />
   </ItemGroup>
 </Project>
