@@ -25,5 +25,5 @@ BEGIN
 		NULL, 
 		NULL, 
 		0);
-
 END
+GO
