@@ -11,5 +11,6 @@
 	[CreatedBy]		INT				NOT NULL,
 	[ModifiedDate]	DATETIME		NULL,
 	[ModifiedBy]	INT				NULL,
-	[IsDeleted]		BIT				NOT NULL	DEFAULT		0
+	[IsDeleted]		BIT				NOT NULL	DEFAULT		0, 
+    [Description] VARCHAR(MAX) NULL
 )
