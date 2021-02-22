@@ -13,5 +13,5 @@
 	[ModifiedDate]	DATETIME		NULL,
 	[ModifiedBy]	INT				NULL,
 	[IsDeleted]		BIT				NOT NULL	DEFAULT		0,
-	[Image]			VARBINARY(MAX)	NOT NULL
+	[Image]			VARBINARY(MAX)	 NULL
 )
