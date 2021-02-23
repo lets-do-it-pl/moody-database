@@ -1,8 +1,7 @@
-﻿IF NOT EXISTS (SELECT 1 FROM [dbo].[User] AS u WHERE u.Username = 'moodydevteam@outlook.com' and u.IsDeleted = 0)
+﻿IF NOT EXISTS (SELECT 1 FROM [dbo].[User] AS u WHERE u.Email = 'moodydevteam@outlook.com' and u.IsDeleted = 0)
 BEGIN
 	
-	INSERT INTO [dbo].[User] (	
-		[Username], 
+	INSERT INTO [dbo].[User] (			
 		[Password], 
 		[FullName], 
 		[Email], 
@@ -15,7 +14,6 @@ BEGIN
 		[ModifiedBy], 
 		[IsDeleted])
 	VALUES ( 
-		N'moodydevteam@outlook.com', 
 		N'5rnrmkSohgVCXjxOnd4JhoEHeDST25NPiAOFbBx3SFk=', 
 		N'Moody Dev Team', 
 		N'moodydevteam@outlook.com', 
@@ -27,5 +25,5 @@ BEGIN
 		NULL, 
 		NULL, 
 		0);
-
 END
+GO
