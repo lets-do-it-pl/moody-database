@@ -12,6 +12,7 @@
 	[CreatedBy]		INT				NOT NULL,
 	[ModifiedDate]	DATETIME		NULL,
 	[ModifiedBy]	INT				NULL,
-	[IsDeleted]		BIT				NOT NULL	DEFAULT		0,
-	[Image]			VARBINARY(MAX)	 NULL
+  [Description] VARCHAR(MAX) NULL,
+	[Image]			VARBINARY(MAX)	 NULL,
+  [IsDeleted]		BIT				NOT NULL	DEFAULT		0
 )
