@@ -2,7 +2,6 @@
 (
 	[Id]			INT				NOT NULL	PRIMARY KEY IDENTITY(1,1),
 	[Password]		VARCHAR(1000)	NOT NULL,
-	[Description]	VARCHAR(MAX)	NULL,
 	[FullName]		VARCHAR(500)	NOT NULL,
 	[Email]			VARCHAR(500)	NOT NULL	UNIQUE,
 	[IsActive]		BIT				NOT NULL	DEFAULT		0,
@@ -12,7 +11,7 @@
 	[CreatedBy]		INT				NOT NULL,
 	[ModifiedDate]	DATETIME		NULL,
 	[ModifiedBy]	INT				NULL,
-  [Description] VARCHAR(MAX) NULL,
-	[Image]			VARBINARY(MAX)	 NULL,
-  [IsDeleted]		BIT				NOT NULL	DEFAULT		0
+	[Description]	VARCHAR(MAX)	NULL,
+	[Image]			VARBINARY(MAX)	NULL,
+	[IsDeleted]		BIT				NOT NULL	DEFAULT		0
 )
