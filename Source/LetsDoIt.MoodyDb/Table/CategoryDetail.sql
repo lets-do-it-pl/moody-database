@@ -2,7 +2,7 @@
 (
 	[Id]			INT             NOT NULL    PRIMARY KEY IDENTITY(1,1),
 	[CategoryId]	INT             NOT NULL,
-	[Order]			DECIMAL(18,5)   NOT NULL	UNIQUE,
+	[Order]			DECIMAL(18,5)   NOT NULL,
 	[Image]			VARBINARY (MAX) NOT NULL,
 	[CreatedDate]	DATETIME		NOT NULL	DEFAULT GETDATE(),
 	[CreatedBy]		INT				NOT NULL,
